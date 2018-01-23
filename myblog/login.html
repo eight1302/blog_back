@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="styles/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="styles/sweetalert.css">
+	<link rel="stylesheet" type="text/css" href="styles/login.css">
+	<link rel="stylesheet" type="text/css" href="styles/clock.css">
+	<link rel="shortcut icon" href="favicon.ico"/>
+</head>
+<title>My_blog</title>
+<body>
+<section class="col-md-12 col-lg-12 col-sm-12 col-xl-12 box">
+	<div  id="clock">
+	   <!-- 原点 -->
+    <div class="origin"></div>
+    <!-- 时钟数 -->
+    <div class="dot_box">
+        <div class="dot">6</div>
+        <div class="dot">5</div>
+        <div class="dot">4</div>
+        <div class="dot">3</div>
+        <div class="dot">2</div>
+        <div class="dot">1</div>
+        <div class="dot">12</div>
+        <div class="dot">11</div>
+        <div class="dot">10</div>
+        <div class="dot">9</div>
+        <div class="dot">8</div>
+        <div class="dot">7</div>
+    </div>
+    <!-- 时、分、秒针 -->
+    <div class="clock_line hour_line" id="hour_line"></div>
+    <div class="clock_line minute_line" id="minute_line"></div>
+    <div class="clock_line second_line" id="second_line"></div>
+    <!-- 日期 -->
+    <div class="date_info" id="date_info"></div>
+    <!-- 时间 -->
+    <div class="time_info" >
+        <div class="time" id="hour_time"></div>
+        <div class="time_1" id="hour_time_1"></div>
+        <div class="time" id="minute_time"></div>
+       <div class="time_1" id="minute_time_1"></div>
+        <div class="time" id="second_time"></div>
+    </div>
+	</div>
+</section>
+	<section>
+		<div class="col-md-2 col-lg-2 col-lg-2 col-sm-2 col-xl-2 login" title="点击登录">
+			<form class="col-md-2 col-lg-2 col-lg-2 col-sm-2 col-xl-2 login-hidden">
+				<h3><p>登录</p></h3>
+				<div class="input-group input-group-md">  
+	          		<span class="input-group-addon" id="sizing-addon1">
+	          			<i class="glyphicon glyphicon-user" aria-hidden="true"></i>
+	          		</span>  
+	               <input type="text" class="form-control" placeholder="用户名" aria-describedby="sizing-addon1" name="username" id="username">  
+    			</div>  
+			    <div class="input-group input-group-md">  
+			        <span class="input-group-addon" id="sizing-addon1">
+			          	<i class="glyphicon glyphicon-lock"></i>
+			        </span>  
+			        <input type="password" class="form-control" placeholder="密码" aria-describedby="sizing-addon1" id="password">  
+			    </div>  
+				<label>
+					<button type="button" class="btn btn-default loginSubmit">登录</button>
+				</label>
+			</form>
+		</div>
+	</section>
+</body>
+	<script type="text/javascript" src="js/sweetalert.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/clock.js"></script>
+	<script type="text/javascript" src="js/login.js"></script>
+</html>

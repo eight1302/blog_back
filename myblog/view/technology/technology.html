@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../../styles/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../../styles/sweetalert.css">
+	<link rel="stylesheet" type="text/css" href="../../styles/index.css">
+	<link rel="stylesheet" type="text/css" href="../../styles/font-awesome.min.css">
+	<link rel="shortcut icon" href="../../favicon.ico"/>
+</head>
+<title>BLOG</title>
+<body>
+	<section id="technology">
+		<header></header>
+		<div class="col-md-12 col-sm-12 col-xl-12 one main">
+			<nav class="col-md-1 col-xl-1 col-sm-12 navbar navbar-default" role="navigation">
+				<div class="collapse navbar-collapse" id="example-navbar-collapse" style="padding: 0;">
+					<ul class="nav navbar-nav">
+						<li class="ten" v-for="date in news" style="width: 100%;text-align: center;">	<span :class="[date.fa]"></span>
+							<a :href="[date.new_tab]" class="five" style="margin-top: -15px;">
+								{{date.name}}
+							</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<section class="col-md-11 col-sm-11 col-xl-11 one" style="height: 90%;">
+				<div class="container">	
+					<ul class="breadcrumb">
+						<li v-for="date in crumbs">
+							<a :href="[date.new_tab]">{{date.name}}</a> <span class="divider"></span>
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-12 col-sm-12 col-xl-12 one title_news">
+					<div class="add_new" style="width: 80px;margin-left: 20px;background: #9474c8;line-height: 30px;">
+						<a href="./add_technology.html" style="color: #fff;text-decoration: none;">
+							<span class="fa fa-pencil-square-o"></span>&nbsp;&nbsp;&nbsp;新增
+						</a>
+					</div>
+				</div>
+				<div class="col-md-12 col-sm-12 col-xl-12 one title_new" style="">
+					<div class="col-md-3 col-sm-3 col-xl-3 one" v-for="date in news_title" style="margin: 5px 0;">
+						
+							<section class="news">
+								<a :href="[date.url]">
+									<div class="col-md-12 col-sm-12 col-xl-12 one img"><img v-bind:src="[date.title]" class="img_head" /></div>
+									<div class="col-md-12 col-sm-12 col-xl-12 one sever">{{date.content_info}}:{{date.content}}</div>
+									<div class="col-md-12 col-sm-12 col-xl-12 one sever">{{date.release}}:{{date.time}}</div>
+									<div class="col-md-12 col-sm-12 col-xl-12 one title"><span style="margin-left: -18%;">{{date.info}}</span></div>
+								</a>
+								<div class="update"><a href="./add_technology.html" style="color: #fff;text-decoration: none;"><span class="fa fa-edit"></span></div>
+							</section>
+						
+					</div>
+				</div>
+			</section>
+		</div>
+		<footer class="col-md-12 col-sm-12 col-xl-12 one" style="position: fixed;"></footer>
+	</section>
+</body>
+	<script type="text/javascript" src="../../js/vue.js"></script>
+	<script type="text/javascript" src="../../js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="../../js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../../js/echarts.js"></script>
+	<script type="text/javascript" src="../../js/technology.js"></script>
+	<script type="text/javascript" src="../../js/include.js"></script>
+	<script type="text/javascript" src="../../js/tool.js"></script>
+</html>

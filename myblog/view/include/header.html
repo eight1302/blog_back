@@ -1,0 +1,35 @@
+<div class="col-md-6 col-sm-6 col-xl-6 one">
+	<div class="col-md-12 col-sm-12 col-xl-12 one">
+		<a href="../home/index.html"><img src="../../imgs/blog.png"></a>
+	</div>
+</div>
+<div class="col-md-6 col-sm-6 col-xl-6 one">
+	<div class="watch">
+		<span class="fa fa-user-circle fa-3 admin" style="font-size: 35px;" title="游客"></span>
+		<div class="watch_info">
+			<div class="col-md-12 col-sm-12 col-xl-12 one" style="margin-top: 14px;">
+				<img src="../../imgs/mi.jpg" style="width: 80px;height: 80px;border-radius: 100%;">
+				<p style="padding: 0;color: #000;margin: 0;font-size: 12px;">超级管理员</p>
+				<p style="color: #000;margin: 0;font-size: 12px;">(©2017，版权所有)Version&nbsp;1.1.0</p>
+				<div class="out">退出</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script>
+	//显示信息退出
+$(".watch_info").hide();   
+$(".admin").mouseover(function (){    
+    $(".watch_info").show(); 
+    $(".watch_info").mouseover(function (){    
+	    $(".watch_info").show();  
+	 }).mouseout(function (){    
+	    $(".watch_info").hide();   
+	});
+ }).mouseout(function (){    
+    $(".watch_info").hide();   
+});
+ $(".out").on('click',function(){
+ 	window.location.href="../../login.html";
+ })
+</script>

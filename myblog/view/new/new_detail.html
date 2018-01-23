@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../../styles/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../../styles/sweetalert.css">
+	<link rel="stylesheet" type="text/css" href="../../styles/index.css">
+	<link rel="stylesheet" type="text/css" href="../../styles/font-awesome.min.css">
+	<link rel="shortcut icon" href="../../favicon.ico"/>
+</head>
+<title>BLOG</title>
+<body>
+	<section id="new_detail">
+		<header></header>
+		<div class="col-md-12 col-sm-12 col-xl-12 one main">
+			<nav class="col-md-1 col-xl-1 col-sm-12 navbar navbar-default" role="navigation">
+				<div class="collapse navbar-collapse" id="example-navbar-collapse" style="padding: 0;">
+					<ul class="nav navbar-nav">
+						<li class="ten" v-for="date in news" style="width: 100%;text-align: center;">	<span :class="[date.fa]"></span>
+							<a :href="[date.new_tab]" class="five" style="margin-top: -15px;">
+								{{date.name}}
+							</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<section class="col-md-11 col-sm-11 col-xl-11 one" style="height: 90%;">
+				<div class="container">
+					<ul class="breadcrumb">
+						<li v-for="date in crumbs">
+							<a :href="[date.new_tab]">{{date.name}}</a> <span class="divider"></span>
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-12 col-sm-12 col-xl-12 one eight" v-for="date in detail">
+					<div class="col-md-12 col-sm-12 col-xl-12 table">
+						<div class="col-md-6 col-sm-6 col-xl-6">
+							<span>{{date.title}}</span>
+						</div>
+						<div class="col-md-6 col-sm-6 col-xl-6" style="text-align: right;">
+							<span>{{date.time}}</span>
+						</div>
+					</div>
+					<div class="col-md-12 col-sm-12 col-xl-12 one nine">
+						<div class="col-md-12 col-sm-12 col-xl-12 material" v-for="date in date.tail">
+							<div class="col-md-12 col-sm-12 col-xl-12">
+								<img v-bind:src="[date.img]" style="width:500px;height: 300px;" >
+							<div class="col-md-12 col-sm-12 col-xl-12">
+							<div class="col-md-12 col-sm-12 col-xl-12">
+								<span>{{date.info}}</span>
+							<div class="col-md-12 col-sm-12 col-xl-12">
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+		<footer class="col-md-12 col-sm-12 col-xl-12 one" style="position: fixed;"></footer>
+	</section>
+</body>
+	<script type="text/javascript" src="../../js/vue.js"></script>
+	<script type="text/javascript" src="../../js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="../../js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../../js/echarts.js"></script>
+	<script type="text/javascript" src="../../js/new_detail.js"></script>
+	<script type="text/javascript" src="../../js/include.js"></script>
+</html>

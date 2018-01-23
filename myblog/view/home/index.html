@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../../styles/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../../styles/sweetalert.css">
+	<link rel="stylesheet" type="text/css" href="../../styles/index.css">
+	<link rel="stylesheet" type="text/css" href="../../styles/font-awesome.min.css">
+	<link rel="shortcut icon" href="../favicon.ico"/>
+</head>
+<title>BLOG</title>
+<body>
+	<section id="blog">
+		<header></header>
+		<div class="col-md-12 col-sm-12 col-xl-12 one main">
+			<nav class="col-md-1 col-xl-1 col-sm-1 navbar navbar-default" role="navigation">
+				<div class="collapse navbar-collapse" id="example-navbar-collapse" style="padding: 0;">
+					<ul class="nav navbar-nav">
+						<li class="ten" v-for="date in news" style="width: 100%;text-align: center;">	<span :class="[date.fa]"></span>
+							<a :href="[date.new_tab]" class="five" style="margin-top: -15px;">
+								{{date.name}}
+							</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<section class="col-md-11 col-sm-11 col-xl-11 one" style="height: 90%;">
+				<div class="col-md-2 col-sm-2 col-xl-2 me">
+					<div class="introduce_img">
+						<img v-bind:src="hade_img" style="width: 110px;height: 110px;border-radius: 100%;">
+						<div class="col-md-12 col-sm-12 col-xl-12 one" v-for="date in my_details" style="margin: 5px 0;font-size: 12px;">
+							<div class="col-md-12 col-sm-12 col-xl-12 one">
+								<strong>{{date.describe}}</strong>
+							</div>
+							<div class="col-md-12 col-sm-12 col-xl-12  one">
+								<span>{{date.details}}</span>
+							</div>
+						</div>
+						<div class="col-md-12 col-sm-12 col-xl-12 one">
+							<div class="add_person">
+								<span class="fa fa-pencil-square-o" style="font-size: 14px;">&nbsp;&nbsp;&nbsp;修改</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-10 col-sm-10 col-xl-10 map" id="map"></div>
+				<div class="col-md-12 col-sm-12 col-xl-12 experience">
+					<div class="col-md-12 col-sm-12 col-xl-12 title">
+						<div class="col-md-6 col-sm-6 col-xl-6 one">
+							<span class="fa fa-calendar-o" style="font-size: 14px;">&nbsp;&nbsp;&nbsp;{{job_express}}</span>
+						</div>
+						<div class="col-md-6 col-sm-6 col-xl-6 one add_express" style="text-align: right;/*width: auto*/">
+							<span class="fa fa-pencil-square-o" style="font-size: 14px;">&nbsp;&nbsp;&nbsp;新增</span>
+						</div>
+					</div>
+					<div class="col-md-12 col-sm-12 col-xl-12 one info">
+						<div class="col-md-12 col-sm-12 col-xl-12 one six express_info" v-for="date in express" style="border-bottom: 1px solid #eee;">
+							<div class="col-md-2 col-sm-2 col-xl-2 one" style="border-right: 1px solid #eee;text-align: center;">
+								<div class="col-md-3 col-sm-3 col-xl-3 one">
+									<div style="margin-top: 15px;font-size: 15px;color: #fff;">
+										<div class="sum">{{date.id}}</div>
+									</div>
+								</div>
+								<div class="col-md-9 col-sm-9 col-xl-9 one">
+									<p class="name_product" style="margin: 5px 0;">{{date.name}}</p>
+									<p class="time" style="margin: 0;">
+										<span class="time1">{{date.time1}}</span>~<span class="time2">{{date.time2}}</span>
+									</p>
+								</div>
+							</div>
+							<div class="col-md-9 col-sm-9 col-xl-9 one" style="padding-top: 5px;padding-left: 10px;">
+								<span class="details">{{date.details}}</span>
+								<p>
+									<span class="load">{{date.load}}</span>：
+									<a :href="[date.url]" class="url">{{date.url}}</a>
+								</p>
+							</div>
+							<div class="col-md-1 col-sm-1 col-xl-1 one" style="padding-top: 5px;padding-left: 10px;">
+								<div class="update_express" style="margin-top: 10px;">修改</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+		<footer class="col-md-12 col-sm-12 col-xl-12 one" style="position: fixed;"></footer>
+		<!--覆盖层相关功能开始-->
+		<div class="cover"></div>
+		<div class="preson_info"></div>
+		<!--覆盖层相关功能结束-->
+		<!--新增项目经验开始-->
+		<div class="express_add"></div>
+		<!--新增项目经验结束-->
+	</section>
+</body>
+	<script type="text/javascript" src="../../js/vue.js"></script>
+	<script type="text/javascript" src="../../js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="../../js/sweetalert.min.js"></script>
+	<script type="text/javascript" src="../../js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../../js/echarts.js"></script>
+	<script type="text/javascript" src="../../js/nav.js"></script>
+	<script type="text/javascript" src="../../js/include.js"></script>
+	<script type="text/javascript" src="../../js/map.js"></script>
+
+</html>

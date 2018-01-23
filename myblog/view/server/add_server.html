@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../../styles/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../../styles/sweetalert.css">
+	<link rel="stylesheet" type="text/css" href="../../styles/index.css">
+	<link rel="stylesheet" type="text/css" href="../../styles/font-awesome.min.css">
+	<link rel="shortcut icon" href="../../favicon.ico"/>
+</head>
+<title>BLOG</title>
+<body>
+	<section id="new_detail">
+		<header></header>
+		<div class="col-md-12 col-sm-12 col-xl-12 one main">
+			<nav class="col-md-1 col-xl-1 col-sm-12 navbar navbar-default" role="navigation">
+				<div class="collapse navbar-collapse" id="example-navbar-collapse" style="padding: 0;">
+					<ul class="nav navbar-nav">
+						<li class="ten" v-for="date in news" style="width: 100%;text-align: center;">	<span :class="[date.fa]"></span>
+							<a :href="[date.new_tab]" class="five" style="margin-top: -15px;">
+								{{date.name}}
+							</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<section class="col-md-11 col-sm-11 col-xl-11 one" style="height: 90%;">
+				<div class="container">
+					<ul class="breadcrumb">
+						<li v-for="date in crumbs">
+							<a :href="[date.new_tab]">{{date.name}}</a> <span class="divider"></span>
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-12 col-sm-12 col-xl-12 one eight">
+					<div class="col-md-12 col-sm-12 col-xl-12 one">
+						<div class="col-md-12 col-sm-12 col-xl-12 one img head">
+							<input type="file" id="head_img" value="" name="" style="display: none;">
+						</div>
+					</div>
+					<div class="col-md-12 col-sm-12 col-xl-12 one">
+						<div class="col-md-12 col-sm-12 col-xl-12 one" style="margin-top: 4%;">
+							<div class="col-md-6 col-sm-6 col-xl-6 one" style="text-align: right;padding-right: 20px;">
+								<label for="new_title">后端标题</label>
+								<input type="text" name="" id="new_title" value="" placeholder="请输入新闻标题">
+							</div>
+							<div class="col-md-6 col-sm-6 col-xl-6 one" style="text-align: left;padding-left: 20px;">
+								<label for="new_time">发布时间</label>
+								<input type="date" name="" id="new_time" value="">
+							</div>
+						</div>
+					</div>
+					<div class="col-md-12 col-sm-12 col-xl-12 one">
+						<div style="width: 80%;margin: auto;color: #8a62cc;">
+							<div class="add_new">
+								<span class="fa fa-child add_child" style="font-size: 20px;"></span><span>添加子项</span>
+							</div>
+						</div>
+						<div class="new_details">
+							<div class="col-md-12 col-sm-12 col-xl-12 one new">
+								<div class="col-md-4 col-sm-4 col-xl-4 one">
+									<div class="new_img">
+										<span class="fa fa-blind fa_img" style="font-size: 50px;"></span>
+										<input type="file" id="file" value="" class="file" style="display: none;">
+									</div>
+								</div>
+								<div class="col-md-7 col-sm-7 col-xl-7 one">
+									<textarea class="text" id="text"></textarea>
+								</div>
+								<div class="col-md-1 col-sm-1 col-xl-1 one">
+									<div class="delete"><span class="fa fa-shopping-basket"></div>
+								</div>
+							</div>
+						</div>
+						<div class="up_new" style="float: right; margin-right: 20px;">
+								<span class="fa fa-child up_child" style="font-size: 20px;"></span><span>发布</span>
+							</div>
+						</div>
+				</div>
+			</section>
+		</div>
+		<footer class="col-md-12 col-sm-12 col-xl-12 one" style="position: fixed;"></footer>
+	</section>
+</body>
+	<script type="text/javascript" src="../../js/sweetalert.min.js"></script>
+	<script type="text/javascript" src="../../js/vue.js"></script>
+	<script type="text/javascript" src="../../js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="../../js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../../js/echarts.js"></script>
+	<script type="text/javascript" src="../../js/servers.js"></script>
+	<script type="text/javascript" src="../../js/include.js"></script>
+	<script type="text/javascript" src="../../js/tool.js"></script>
+
+</html>

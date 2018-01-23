@@ -1,0 +1,69 @@
+body{
+	margin:0;
+	padding:0; 
+	background: url(../imgs/download.jpg) no-repeat center fixed;
+	min-width:800px; 
+}
+section{
+	margin: 15% 20% 0 20%;
+}
+h3{
+	width: 240px;
+	color: #fff;
+	margin-top: 10px;
+	padding: 0;
+}
+p{
+	margin: auto;
+	margin-left: 40%;
+}
+.github{
+	width: 240px;
+	padding-right: 0; 
+    padding-left: 0; 
+	margin:0 20px 20px 20px;
+	height: 185px;
+}
+.login{
+	width: 300px;
+    margin: auto;
+    height: 200px;
+    background: rgb(102, 102, 102);
+    filter: alpha(Opacity=80);
+    -moz-opacity: 0.8;
+    opacity: 0.8;
+    margin-left: 35%;
+}
+.input-group-md{
+	margin-bottom: 10px;
+}
+.login-hidden{
+	width: 240px;
+	height: 185px;
+	margin: 0;
+	padding: 0;
+	margin-left: 5%;
+}
+.web{
+	width: 240px;
+	height: 185px;
+	padding-right: 0; 
+    padding-left: 0; 
+	margin:0 20px 20px 20px;
+	color: #000;
+	
+}
+button{
+	margin-left: 80px; 
+}
+span{
+	margin:10% 25% 0 25%;
+	font-size: 60px;
+	color: #AA42E4;
+}
+img{
+	filter:alpha(Opacity=50);-moz-opacity:0.5;opacity: 0.5;
+	width: 100%;
+	height: 100%;
+	border-radius: 5px; 
+}
