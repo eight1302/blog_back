@@ -78,6 +78,14 @@ new Vue({
     job_express : '项目经历',
     express : [
 	    {
+	    	id : '19',
+	    	name : '技术博客(私人后台)',
+	    	time1 : '2018-01-01',
+	    	time2 : '2018-01-30',
+	    	details : '使用vue/jquery/bootstrap/echarts等,把自己工作一年多的实际使用的技术以及自学的技术,完成一个属于自己的博客网站的后台的前端页面的布局设计以及交互设计的业务逻辑等.',
+	    	load : '查看路径',
+	    	url : 'https://eight1302.github.io/blog_back/myblog/login.html',
+	    },{
 	    	id : '18',
 	    	name : '技术博客(私人前端)',
 	    	time1 : '2018-01-01',
