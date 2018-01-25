@@ -18,7 +18,7 @@ $(".loginSubmit").click(function(SweetAlert){
         async: false,  
         success: function(e) {
             if(e.state == 200){
-                if(e.data.name == "admin" || e.data.pass == "123456"){
+                if(e.data.name == username || e.data.pass == password){
                    window.location.href="./view/home/index.html";
                 }
             }  
