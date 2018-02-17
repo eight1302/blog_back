@@ -12,7 +12,6 @@ $(".preson_info").load("./person.html");
 $(".express_add").load("./express.html");
 
 //添加导航点击变化
-$(".active").find(".ten").show();
 $(".ten").on('click',function(){
 	$(this).addClass("active").siblings().removeClass("active");	
 })
