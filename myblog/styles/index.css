@@ -27,6 +27,14 @@ header{
 .one{
 	padding: 0;
 }
+.active{
+    background: #9474c8;
+    display: block;
+    color: #fff;
+}
+.active a{
+    color: #fff;
+}
 .watch{
 	float: right;
     margin-right: 20px;
