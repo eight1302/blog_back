@@ -11,6 +11,13 @@ $("footer").load("../include/footer.html");
 $(".preson_info").load("./person.html");
 $(".express_add").load("./express.html");
 
+//添加导航点击变化
+$(".active").find(".ten").show();
+$(".ten").on('click',function(){
+	$(this).addClass("active").siblings().removeClass("active");	
+})
+
+
  //启用滚动条
  $(document.body).css({"overflow-x":"auto","overflow-y":"auto"});
 
