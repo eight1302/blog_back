@@ -77,7 +77,43 @@ new Vue({
     ],
     job_express : '项目经历',
     express : [
-	     {
+	    {
+	    	id : '23',
+	    	name : 'jquery 前端评论插件模板',
+	    	time1 : '2018-03-07',
+	    	time2 : '2018-03-07',
+	    	details : '使用jquery/bootstrap等,实现实时评论信息展示.',
+	    	load : '查看路径',
+	    	url : 'https://eight1302.github.io/comments/view/index.html',
+	    },
+	    {
+	    	id : '22',
+	    	name : 'angular 购物车列表',
+	    	time1 : '2018-03-03',
+	    	time2 : '2018-03-05',
+	    	details : '使用angular/jquery/bootstrap等,实现前端购物车功能.',
+	    	load : '查看路径',
+	    	url : 'https://eight1302.github.io/angular/index.html',
+	    }, 
+	    {
+	    	id : '21',
+	    	name : 'VUE 后台管理',
+	    	time1 : '2018-02-25',
+	    	time2 : '2018-03-02',
+	    	details : '使用vue/jquery/bootstrap等,实现前端功能模块的静态页面展示以及部分前端交互编写，适应手机端、平板、电脑.',
+	    	load : '查看路径',
+	    	url : 'https://eight1302.github.io/VUE-UI/view/home/index.html',
+	    }, 
+	    {
+	    	id : '20',
+	    	name : '前端分页以及条件查询等',
+	    	time1 : '2018-01-29',
+	    	time2 : '2018-01-29',
+	    	details : '使用jquery/bootstrap等,实现前端分页效果,查询信息展示,批量删除、全选、下拉框查询以及展示当前使用的系统类型等前端业务逻辑处理.',
+	    	load : '查看路径',
+	    	url : 'https://eight1302.github.io/select_query_page/view/index.html',
+	    }, 
+	    {
 	    	id : '19',
 	    	name : '技术博客(私人后台)',
 	    	time1 : '2018-01-01',
@@ -90,7 +126,7 @@ new Vue({
 	    	name : '技术博客(私人前端)',
 	    	time1 : '2018-01-01',
 	    	time2 : '2018-01-30',
-	    	details : '使用vue/jquery/bootstrap/echarts等,把自己工作一年多的实际使用的技术以及自学的技术,完成一个属于自己的博客网站的前端整个前端的布局设计以及前端的交互设计等.',
+	    	details : '使用vue/jquery/bootstrap/echarts等,把自己工作一年多的实际使用的技术以及自学的技术,完成一个属于自己的博客网站的前端整个前端的布局设计以及前端的交互设计等,适应手机端、平板、电脑灯的屏幕.',
 	    	load : '查看路径',
 	    	url : 'https://eight1302.github.io/blog/blog/view/home/index.html',
 	    },{
